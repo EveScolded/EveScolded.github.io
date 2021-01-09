@@ -3,22 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+    <title>Portfolio</title>
+    <meta name="description" content="Ewelina Rugała's skills & projects" />
+
+    <meta property="og:title" content="Portfolio" />
+    <meta
+      property="og:description"
+      content="Ewelina Rugała's skills & projects"
+    />
+    <meta property="og:url" content="https://evescolded.github.io/" />
     <meta
       property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
+      content="https://evescolded.github.io/src/assets/img/cover.png"
     />
-
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
 
     <link
       rel="apple-touch-icon"
@@ -145,9 +142,90 @@
     />
   </head>
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <section class="hero">
+      <div class="hero__image-container">
+      <span class="hero__cloud">Hey there!<span class="hero__hand"> 👋</span></span>
+      <img class="hero__image" src="../assets/img/hero.jpg" alt="Ewelina's photo">
+      </div>
+      <div class="hero__description">
+        <h1 class="hero__header">
+          My name is Ewelina </br> and I'm an aspiring <span class="hero__header--color"> Frontend developer</span>
+        </h1>
+        <p class="hero__paragraph">
+          You might be interested in checking the list of
+          <a class="hero__link" href="#skills">my skills</a>. Don’t forget to have
+          a glimpse at <a class="hero__link" href="#projects">my projects</a>.
+          Currently I’m looking for a new challenges so if you have one -
+          <a class="hero__link" href="#contact">contact me</a>😊
+        </p>
+      </div>
+      <a class="hero__mail" href="mailto:ewelina.rugala93@gmail.com"
+        >Mail me!</a>
+    </section>
+
+    <section class="skills">
+      <h2 class="skills__header">My skills</h2>
+        <div class="skills__container">
+          <article class="skills-section">
+            <span class="skills-section__emoji">💪</span>
+            <h3 class="skills-section__header">Working knowlege</h3>
+            <ul class="skills-list">
+              <li class="skills-list__item">Semantic HTML5</li>
+              <li class="skills-list__item">CSS3</li>
+              <li class="skills-list__item">SASS</li>
+              <li class="skills-list__item">JS: Local storage</li>
+              <li class="skills-list__item">JS: DOM manipulations</li>
+              <li class="skills-list__item">Markdown</li>
+              <li class="skills-list__item">Figma</li>
+              <li class="skills-list__item">Forms</li>
+            </ul>
+          </article>
+          <article class="skills-section">
+            <span class="skills-section__emoji">🤔</span>
+            <h3 class="skills-section__header">Know something about</h3>
+            <ul class="skills-list skills-list--blue">
+              <li class="skills-list__item">JavaScript ES6 + features</li>
+              <li class="skills-list__item">CSS animations</li>
+              <li class="skills-list__item">Working with API</li>
+              <li class="skills-list__item">NPM Scripts</li>
+              <li class="skills-list__item">PWA</li>
+              <li class="skills-list__item">Git</li>
+              <li class="skills-list__item">Accessibility</li>
+              <li class="skills-list__item">Python</li>
+            </ul>
+          </article>
+          <article class="skills-section">
+            <span class="skills-section__emoji">🎓</span>
+            <h3 class="skills-section__header">Want to learn</h3>
+            <ul class="skills-list skills-list--dot">
+              <li class="skills-list__item">React JS</li>
+              <li class="skills-list__item">Any CSS framework</li>
+              <li class="skills-list__item">GraphQL</li>
+              <li class="skills-list__item">JQuery</li>
+              <li class="skills-list__item">Node</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects"></section>
+      <h2 class="projects__header">My recent projects</h2>
+      <p class="projects__description">I started my frontend developer path in 2020. I’ve built some projects. Here’s the list of the things I’ve done so far in my free time.</p> 
+      <div class="projects__container">
+        <article class="project">
+          <div class="project__content">
+            
+          </div>
+        </article>
+        
+      </div>
+    <section class="contact">
+      <h2 class="contact__header">Contact me</h2>
+      <p calss="contact__description">I'm open for new opportunities. If you have one for me we should talk!</p>
+      <div class="contact__container">
+
+      </div> 
+    </section>
   </body>
 </html>
