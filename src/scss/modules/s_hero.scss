@@ -16,7 +16,7 @@
 
         &__image-container {
             position:relative;
-            width: 620px;
+            width: 610px;
         }
 
         &__cloud {
@@ -28,15 +28,18 @@
             font-size: 32px;
             line-height: 40px;
             position: absolute;
-            top: 70px;
-            right: 10px;
+            top: 80px;
+            right: 12px;
 
             &:after {
                 background-image: url("../assets/img/Speech_cloud.svg");
                 display: block;
                 position: absolute;
-                top: 80px;
-                right: 30px;
+                content: "";
+                top: 70px;
+                right: 186px;
+                width: 18px;
+                height: 23px;
             }
         }
 
@@ -70,6 +73,7 @@
                 height: 255px;
                 content: "";
                 top: 0;
+                
             }
 
             &:before {
@@ -115,12 +119,12 @@
     }
 
     &__link {
-        color: var(--link-color);
+        color: var(--linkMail-color);
 
     }
 
     &__mail {
-        background-color: var(--mail-blue);
+        background-color: var(--linkMail-color);
         padding: 4px 24px;
         border-radius: 64px;
         text-decoration: none;
