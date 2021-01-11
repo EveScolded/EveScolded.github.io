@@ -8,13 +8,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Roboto+Mono&display=swap');
 
-:root {
-  --linkMail-color: #4DA8FF;
-  --background-blue: #1070CA;
-}
-
 html {
   box-sizing: border-box;
+  width:100%;
 }
 
 *, *::before, *::after {

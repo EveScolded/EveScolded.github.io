@@ -11,7 +11,7 @@
         display: none;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         margin-bottom: 176px;
 
         &__image-container {
@@ -21,7 +21,7 @@
 
         &__cloud {
             display: block;
-            background-color: var(--background-blue);
+            background-color: $background-blue;
             border-radius: 16px;
             color:white;
             padding: 16px 19px;
@@ -54,7 +54,7 @@
         border-radius: 50%;
         border: 24px solid #F6F9FD;
 
-        @media (min-width: 768px) {
+        @media (min-width: $tablet) {
         margin: 130px auto 72px auto;
         }
     }
@@ -62,7 +62,7 @@
     &__description {
         padding: 0 16px; 
             
-        @media (min-width: 768px) {
+        @media (min-width: $tablet) {
             position: relative;
             max-width: 830px;
             &:before,
@@ -94,13 +94,13 @@
         font-size: 26px;
         line-height: 32px;
 
-        @media (min-width: 768px) {
+        @media (min-width: $tablet) {
             font-size: 32px;
             line-height: 40px;
         }    
 
         &--color {
-            color:var(--background-blue);
+            color: $background-blue;
         }
     }
 
@@ -111,7 +111,7 @@
         line-height: 32px;
         margin-bottom: 48px;
 
-        @media (min-width: 768px) {
+        @media (min-width: $tablet) {
             font-size: 20px;
             line-height: 40px;
             margin-bottom: 68px;
@@ -119,12 +119,12 @@
     }
 
     &__link {
-        color: var(--linkMail-color);
+        color: $linkMail-color;
 
     }
 
     &__mail {
-        background-color: var(--linkMail-color);
+        background-color: $linkMail-color;
         padding: 4px 24px;
         border-radius: 64px;
         text-decoration: none;
