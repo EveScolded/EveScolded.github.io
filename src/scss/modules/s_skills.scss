@@ -1,37 +1,39 @@
 .skills {
-    background-color: $background-blue;
-    color: white;
-    padding: 80px 16px 176px;
-
-    &__header {
+        background-color: $background-blue;
+        color: white;
+        padding: 34px 16px 88px;
+    
+     &__header {
         text-align: center;
         font-size: 36px;
         line-height: 48px;
-
-        @media (min-width: $desktop) {
+    
+        @media (min-width: 768px) {
             font-size: 48px;
             line-height: 56px;
-          }
+        }
     }
 
     &__container-grid {
         display:grid;
         grid-template-columns: 1fr;
+        grid-row-gap: 64px;
         margin: 0 auto;
         padding:0px;
-        max-width: 288px; 
+         
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
         &__container-grid {
             display:grid;
-            grid-template-columns: 379px 379px 379px;
+            grid-template-columns: 1fr 1fr 1fr;
             grid-column-gap: 24px;
             margin: 0 auto;
-            max-width: 1184px;
+            //max-width: 1184px;
         }
-    }
-}
+    }    
+}       
+
 
 .skills-article {
 
@@ -42,20 +44,28 @@
         display: block;
         margin-bottom: 16px;
     }
-
+        
     &__header {
         text-align: center;
-
+        margin: 24px;
     }
 }
 
+
+
 .skills-list {
+    color: #dbeaf7;
     font-size: 16px;
     line-height: 24px;
-    padding-left: 18px;
-    width: 225px;
-    margin: 0 auto;
-    
+    padding: 0;
+    width: 288px;
+    margin:0 auto;
+
+    @media (min-width: 768px) {
+        width: 226px;
+    }  
+
+        
     &__item {
         list-style-type: none;
         padding: 0 0 24px 24px;
