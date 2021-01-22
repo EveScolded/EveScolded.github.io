@@ -11,6 +11,7 @@
         @media (min-width: 768px) {
             font-size: 48px;
             line-height: 56px;
+            margin-bottom: 128px;
         }
     }
 
@@ -28,8 +29,8 @@
             display:grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-column-gap: 24px;
-            margin: 0 auto;
-            //max-width: 1184px;
+            margin: 0 auto 176px auto;
+            max-width: 1184px;
         }
     }    
 }       
