@@ -6,7 +6,7 @@ fetch(
     .then((resp) => resp.json())
     .then((resp) => {
       for (let repo of resp) {
-        const { name, description, html_url, git_url, fork } = repo;
+        const { name, description, html_url, homepage, fork } = repo;
 
         if (fork) {
           continue
@@ -30,11 +30,11 @@ fetch(
               </p>
               <p class="project__grid">
                 <span class="project__label">demo:</span>
-                <span>&lt;<a href="${html_url}" title="${name}" class="project__link" target="_blank" rel="noopener norefferer">see here</a>&gt;</span>
+                <span>&lt;<a href="${homepage}" title="${name}" class="project__link" target="_blank" rel="noopener norefferer">see here</a>&gt;</span>
               </p>
               <p class="project__grid">
                 <span class="project__label">github:</span>
-                <span>&lt;<a href="${git_url}" title="${name}" class="project__link" target="_blank" rel="noopener norefferer">source code</a>&gt;</span>
+                <span>&lt;<a href="${html_url}" title="${name}" class="project__link" target="_blank" rel="noopener norefferer">source code</a>&gt;</span>
               </p>
 
             </div>
