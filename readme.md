@@ -1,4 +1,4 @@
-![cover](https://evescolded.github.io/src/assets/img/cover.png)
+![cover](./src/assets/img/cover.png)
 
 # Ewelina Rugała - Junior Frontend Developer
 
