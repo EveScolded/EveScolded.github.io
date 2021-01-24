@@ -1,5 +1,7 @@
 import '../scss/main.scss';
 
+console.log("Hi, I'm Ewelina - welcome in my portfolio 🤗");
+
 fetch(
     "https://api.github.com/users/evescolded/repos?sort=created&direction=asc"
   )
