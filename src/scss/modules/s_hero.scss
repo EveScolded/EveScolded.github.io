@@ -8,20 +8,8 @@
 
     &__cloud {
         display: none;
-    }
 
-    &__image-container {
-       margin-bottom:16px;
-    }
-
-    @media (min-width: 768px) {
-
-        &__image-container {
-            position:relative;
-            width: 610px;
-        }
-
-        &__cloud {
+        @media (min-width: 768px) {
             display: block;
             background-color: $background-blue;
             border-radius: 16px;
@@ -34,7 +22,7 @@
             right: 12px;
 
             &:after {
-                background-image: url("../assets/img/Speech_cloud.svg");
+                background-image: url("../assets/img/speech_cloud.svg");
                 display: block;
                 position: absolute;
                 content: "";
@@ -43,6 +31,19 @@
                 width: 18px;
                 height: 23px;
             }
+        }
+    }
+
+    &__hand {
+        margin-left: 10px;
+    }
+
+    &__image-container {
+       margin-bottom:16px;
+    
+        @media (min-width: 768px) {
+            position:relative;
+            width: 610px;
         }
     }
 
@@ -131,5 +132,9 @@
         text-decoration: none;
         color:white;
         font-size: 20px;
+
+        &:hover {
+            box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.5);  
+        }
     }
 } 

@@ -1,0 +1,19 @@
+@keyframes wave {
+    0% {
+        transform: rotate(-15deg);
+        transform-origin: right bottom;
+    }
+    50% {
+        transform: rotate(15deg);
+        transform-origin: right bottom;
+    }
+    100% {
+        transform: rotate(-15deg);
+        transform-origin: right bottom;
+    }
+}
+
+.hero__hand {
+    display: inline-block;
+    animation: wave 1s ease-in-out infinite;
+}

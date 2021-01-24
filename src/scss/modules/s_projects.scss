@@ -68,6 +68,17 @@
 
   &__circles {
     margin: 16px;
+    background: url('../assets/img/project_dots.svg');
+    height: 8px;
+    width: 40px;
+  }
+
+  &__github-logo {
+    background: url('../assets/img/gh_black.svg');
+    height: 22px;
+    width: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   &__grid {

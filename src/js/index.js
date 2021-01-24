@@ -12,14 +12,14 @@ fetch(
           continue
         }
         const repoList = document.querySelector(".projects__container--js");
-  
+        // src="img/gh_logo_black.8f2f659d.svg"
         const myTemplate =         
         `<article class="project">
             <div class="project__bar">
-              <img class="project__circles" src="img/circles_top.svg" alt="">
+              <span class="project__circles" alt=""></span>
             </div>
             <div class="project__content">
-              <img src="img/gh_logo_black.svg" alt="logo GitHub">
+              <div class="project__github-logo"  alt="logo GitHub"></div>
               <p class="project__grid">
                 <span class="project__label">project:</span>
                 <span class="project__name">${name}</span>
