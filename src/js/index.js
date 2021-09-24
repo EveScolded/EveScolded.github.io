@@ -1,22 +1,21 @@
-import '../scss/main.scss';
+import "../scss/main.scss";
 
 console.log("Hi, I'm Ewelina - welcome in my portfolio 🤗");
 
 fetch(
-    "https://api.github.com/users/evescolded/repos?sort=created&direction=asc"
-  )
-    .then((resp) => resp.json())
-    .then((resp) => {
-      for (let repo of resp) {
-        const { name, description, html_url, homepage, fork } = repo;
+  "https://api.github.com/users/evescolded/repos?sort=created&direction=desc"
+)
+  .then((resp) => resp.json())
+  .then((resp) => {
+    for (let repo of resp) {
+      const { name, description, html_url, homepage, fork } = repo;
 
-        if (fork) {
-          continue
-        }
-        const repoList = document.querySelector(".projects__container--js");
-        // src="img/gh_logo_black.8f2f659d.svg"
-        const myTemplate =         
-        `<article class="project">
+      if (fork) {
+        continue;
+      }
+      const repoList = document.querySelector(".projects__container--js");
+      // src="img/gh_logo_black.8f2f659d.svg"
+      const myTemplate = `<article class="project">
             <div class="project__bar">
               <span class="project__circles" alt=""></span>
             </div>
@@ -40,13 +39,10 @@ fetch(
               </p>
 
             </div>
-          </article>`        
-        ;
-  
-        repoList.innerHTML += myTemplate;
-      }
-    })
-    .catch((error) => {
-      console.log("Nie udało się pobrać repo :(");
-    });
-  
+          </article>`;
+      repoList.innerHTML += myTemplate;
+    }
+  })
+  .catch((error) => {
+    console.log("Nie udało się pobrać repo :(");
+  });
