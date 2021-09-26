@@ -30,6 +30,7 @@
   &__container {
     @media (min-width: 768px) {
       display: flex;
+      align-items: center;
       justify-content: space-between;
       max-width: 580px;
       margin: 0 auto;
@@ -39,7 +40,6 @@
   &__links {
     display: flex;
     justify-content: center;
-    margin-bottom: 56px;
   }
 
   &__icons {
@@ -63,6 +63,7 @@
     border-radius: 64px;
     text-decoration: none;
     font-size: 20px;
+    max-height: fit-content;
 
     &:hover {
       box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.5);
