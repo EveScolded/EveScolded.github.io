@@ -55,4 +55,17 @@
       box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.5);
     }
   }
+
+  &__mail {
+    color: white;
+    background-color: #4da8ff;
+    padding: 4px 24px;
+    border-radius: 64px;
+    text-decoration: none;
+    font-size: 20px;
+
+    &:hover {
+      box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
 }
